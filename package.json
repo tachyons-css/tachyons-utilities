@@ -1,12 +1,12 @@
 {
   "name": "tachyons-utilities",
   "version": "0.3.0",
-  "style": "utilities.css",
-  "homepage": "http://mrmrs.io/tachyons-utilities",
-  "description": "Performance based sass module.",
+  "style": "tachyons-utilities.css",
+  "homepage": "http://github.com/mrmrs/tachyons-utilities",
+  "description": "Performance based css module.",
   "keywords": [
     "oocss",
-    "sass",
+    "css",
     "css",
     "rwd",
     "design",
