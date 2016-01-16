@@ -2,15 +2,15 @@
   "name": "tachyons-utilities",
   "version": "1.1.1",
   "style": "tachyons-utilities.css",
-  "homepage": "http://github.com/mrmrs/tachyons-utilities",
+  "homepage": "http://github.com/tachyons-css/tachyons-utilities",
   "description": "Performance based css module.",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/tachyons-utilities.git"
+    "url": "http://github.com/tachyons-css/tachyons-utilities.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/tachyons-utilities/issues",
+    "url": "https://github.com/tachyons-css/tachyons-utilities/issues",
     "email": "hi@mrmrs.cc"
   },
   "author": {
