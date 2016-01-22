@@ -1,153 +1,86 @@
-# TACHYONS-UTILITIES
+# tachyons-utilities 1.1.3
 
-http://tachyons.io
+Performance based css module.
 
-Work In Progress. Pull requests and open issues welcome.
+#### Stats
 
-## Install
+213 | 4 | 14
+---|---|---
+bytes | selectors | declarations
+
+## Installation
+
+#### With [npm](https://npmjs.com)
+
 ```
 npm install --save-dev tachyons-utilities
 ```
-or download the css on github and include in your project.
 
-## The Code
+#### With Git
+
+```
+git clone https://github.com/tachyons-css/tachyons-utilities
 ```
 
+## Usage
+
+#### Using with [PostCSS](https://github.com/postcss/postcss)
+
+Import the css module
+
+```css
+@import "tachyons-utilities";
+```
+
+Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+
+```sh
+$ npm i -g tachyons-cli
+$ tachyons-cli path/to/css-file.css > dist/t.css
+```
+
+#### Using the CSS
+
+The built CSS is located in the `css` directory. It contains an unminified and minified version.
+You can either cut and paste that css or link to it directly in your html.
+
+```html
+<link rel="stylesheet" href="path/to/module/css/tachyons-utilities">
+```
+
+#### Development
+
+The source CSS files can be found in the `src` directory.
+Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+
+## The CSS
+
+```css
 /*
 
    UTILITIES
 
 */
+.aspect-ratio { height: 0; padding-top: 56.25%; position: relative; }
+.aspect-ratio--object { bottom: 0; height: 100%; left: 0; position: absolute; right: 0; top: 0; width: 100%; z-index: 100; }
+.overflow-container { overflow-y: scroll; }
+.center { margin-right: auto; margin-left: auto; }
+```
 
-/*
- *  The Media Object
- *  Built by @stubornella
- *  http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
- *
- *  <div class="media attribution">
- *
- *    <a href="http://twitter.com/stubbornella" class="img">
- *      <img src="http://stubbornella.com/profile_image.jpg" alt="me" />
- *    </a>
- *
- *    <div class="bd">
- *      @Stubbornella 14 minutes ago
- *    </div>
- *
- *   </div>
- */
+## Contributing
 
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
 
+## Authors
 
-/*
- * The Flag Object
- * Built by @csswizzrdry
- * http://csswizardry.com/2013/05/the-flag-object/
- *
- *
- * Use to vertically center text against an image.
- *
- *  <div class="flag">
- *      <div class="flag--image">
- *          <img src="" alt="">
- *      </div>
- *      <div class="flag--body">
- *          <p></p>
- *      </div>
- *  </div>
- *
- */
-
-.flag {
-  display: table;
-  width: 100%;
-}
-
-.flag--image,
-.flag--body {
-    display: table-cell;
-    vertical-align: middle;
-
-    .flag--top & {
-        vertical-align: top;
-    }
-
-    .flag--bottom & {
-        vertical-align: bottom;
-    }
-
-}
-
-.flag--image {
-    padding-right: 10px;
-
-    > img {
-        display: block;
-        max-width: none;
-    }
-
-    .flag--rev & {
-        padding-right: 0;
-        padding-left: 10px;
-    }
-
-}
-
-.flag--body {
-    width: 100%;
-}
-
-/*
-  Aspect ratios for media objects i.e canvas, iframe, video, svg etc.
-  Defaults to 16x9
-*/
-
-.aspect-ratio {
-  height: 0;
-  padding-top: 56.25%;
-  position: relative;
-}
-
-.aspect-ratio--object {
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-}
-
-.overflow-container {
-  overflow-y: scroll;
-```}
-
-## Author
-
-[mrmrs](http://mrmrs.io)
+* [mrmrs](http://mrmrs.io)
+* [johno](http://johnotander.com)
 
 ## License
 
-The MIT License (MIT)
-
-Copyright (c) 2015 @mrmrs
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+MIT
 
