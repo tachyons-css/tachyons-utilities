@@ -4,7 +4,7 @@ Performance based css module.
 
 #### Stats
 
-213 | 4 | 14
+241 | 7 | 16
 ---|---|---
 bytes | selectors | declarations
 
@@ -61,7 +61,10 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
    UTILITIES
 
 */
-.aspect-ratio { height: 0; padding-top: 56.25%; position: relative; }
+.aspect-ratio { height: 0; position: relative; }
+.aspect-ratio--16x9 { padding-bottom: 56.25%; }
+.aspect-ratio--4x3 { padding-bottom: 75%; }
+.aspect-ratio--8x5 { padding-bottom: 62.5%; }
 .aspect-ratio--object { bottom: 0; height: 100%; left: 0; position: absolute; right: 0; top: 0; width: 100%; z-index: 100; }
 .overflow-container { overflow-y: scroll; }
 .center { margin-right: auto; margin-left: auto; }
