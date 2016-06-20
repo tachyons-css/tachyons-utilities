@@ -3,7 +3,7 @@
   "version": "1.2.1",
   "style": "src/tachyons-utilities.css",
   "description": "Performance based css module.",
-  "isCore" true,
+  "isCore": true,
   "keywords": [
     "tachyons",
     "tachyons-css"
