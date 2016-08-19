@@ -1,6 +1,6 @@
 {
   "name": "tachyons-utilities",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "style": "src/tachyons-utilities.css",
   "description": "Performance based css module.",
   "isCore": true,
