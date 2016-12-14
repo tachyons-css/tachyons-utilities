@@ -2,6 +2,7 @@
   "name": "tachyons-utilities",
   "version": "1.2.8",
   "style": "src/tachyons-utilities.css",
+  "main": "src/tachyons-utilities.css",
   "description": "Performance based css module.",
   "isCore": true,
   "keywords": [
