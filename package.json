@@ -1,6 +1,6 @@
 {
   "name": "tachyons-utilities",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "style": "src/tachyons-utilities.css",
   "main": "src/tachyons-utilities.css",
   "description": "Performance based css module.",
@@ -21,7 +21,7 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "tachyons-cli": "^1.0.10",
+    "tachyons-cli": "^1.0.11",
     "watch": "^1.0.1"
   },
   "scripts": {
